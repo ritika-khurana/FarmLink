@@ -1,0 +1,21 @@
+{
+  "name": "farmlink",
+  "version": "1.0.0",
+  "description": "Agricultural Supply Chain on Blockchain",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "copy-contracts": "node scripts/copy-contracts.js",
+    "postmigrate": "npm run copy-contracts",
+    "start-client": "cd client && npm start",
+    "build-client": "cd client && npm run build",
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

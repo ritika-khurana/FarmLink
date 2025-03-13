@@ -1,0 +1,57 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.product-state {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.product-timeline {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  position: relative;
+}
+
+.product-timeline::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #dee2e6;
+  top: 25px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.timeline-step {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.timeline-step-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.timeline-step-active .timeline-step-circle {
+  background-color: #28a745;
+  color: white;
+}
